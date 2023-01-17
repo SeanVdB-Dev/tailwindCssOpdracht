@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-logo{
+    width: 6rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    min-height: 4rem;
+    width: 100%;
+}
+
+.navbar-end{
+    display: flex;
+    /*width: 50%;*/
+    justify-content: flex-end;
+    
+}
+.next-to-logo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
