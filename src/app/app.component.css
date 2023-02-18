@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media (max-width: 640px) {
+    .description{
+        justify-content: center !important;
+    }
+}

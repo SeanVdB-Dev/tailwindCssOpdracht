@@ -1,25 +1,32 @@
 <div class="sticky top-0 z-50 bg-white">
-    <div class="navbar h-24 pl-0 w-full">
-        <img class="header-logo" src="../../../assets/logo_large.png"/>
+    <div class="flex content-center min-h-[4rem] pl-0 w-full">
+        <img class="header-logo max-[640px]:hidden" src="../../../assets/logo_large.png"/>
         <div class="flex flex-col w-full">
-            <div class="flex-initial h-14 navbar-row border-b">
-                <div class="flex-none navbar-end my-1">
-                    <label class="h-12 w-12 rounded-full transition-colors hover:bg-gray-200">
-                        <mat-icon class="h-6 my-3 mx-3" aria-label="home icon">home</mat-icon>
-                    </label>
-                    <label class="h-12 w-12 rounded-full transition-colors hover:bg-gray-200">
-                        <mat-icon class="h-6 my-3 mx-3" aria-label="shopping cart icon">shopping_cart</mat-icon>
-                    </label>
-                    <button class="py-2 px-4 my-1 mx-1 bg-main-500 rounded text-white">
-                        <p class="uppercase">aanmelden</p>
-                    </button>
-                </div>
+            <div class="flex flex-none justify-end content-center py-1">
+                <p class="sm:hidden text-xl font-bold h-min pl-4 mr-auto self-center">Patisserie Stefan</p>
+                <div class="grow"></div>
+                <label class="h-12 w-12 rounded-full transition-colors hover:bg-gray-200">
+                    <mat-icon class="h-6 my-3 mx-3" aria-label="home icon">home</mat-icon>
+                </label>
+                <label class="h-12 w-12 rounded-full transition-colors hover:bg-gray-200">
+                    <mat-icon class="h-6 my-3 mx-3" aria-label="shopping cart icon">shopping_cart</mat-icon>
+                </label>
+                <button class="px-4 mt-1 ml-1 mr-3 sm:!mr-1 bg-main-500 rounded text-white max-[640px]:h-10">
+                    <div class="flex justify-center content-center">
+                        <mat-icon class="h-6 sm:mr-2" aria-label="person icon login">person_outline</mat-icon>
+                        <p class="uppercase max-[640px]:hidden sm:block">aanmelden</p>
+                    </div>
+                </button>
             </div>
-            <div class="flex justify-center content-center navbar-row h-10 bg-sec-400">
-                <mat-icon class="self-center mx-3 text-main-500" aria-label="info icon">info</mat-icon>
+            <div class="border-b"></div>
+            <div class="flex justify-center content-center navbar-row max-[640px]:py-2 max-[640px]:text-sm sm:text-base bg-sec-400">
+                <mat-icon class="self-center mx-3 text-main-500 min-w-[1.5rem]" aria-label="info icon">info</mat-icon>
                 <p class="h-min self-center">Afhalen op donderdag 19-01-2023 om 08:30u bij Plezantstraat</p>
-                <button class="py-1 px-4 my-1 mx-3 bg-main-500 rounded text-white">
-                    <p class="uppercase">wijzigen</p>
+                <button class="py-1 px-2 my-1 mx-3 bg-main-500 rounded text-white">
+                    <div class="flex justify-center content-center">
+                        <mat-icon class="max-[640px]:hidden h-6 sm:mr-2" aria-label="person icon login">edit</mat-icon>
+                        <p class="uppercase">wijzigen</p>
+                    </div>
                 </button>
             </div>
         </div>

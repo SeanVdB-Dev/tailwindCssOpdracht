@@ -1,0 +1,83 @@
+<p class="text-lg font-bold uppercase">fototaart</p>
+<p class="text-gray-500 mb-2">€&nbsp;0.00</p>
+<hr>
+<select class="border-gray-300 border rounded mt-2 w-min">
+    <option selected disabled hidden>aantal personen</option>
+    <option value="8">8 personen</option>
+    <option value="10">10 personen</option>
+    <option value="12">12 personen</option>
+    <option value="15">15 personen</option>
+    <option value="18">18 personen</option>
+    <option value="20">20 personen</option>
+    <option value="25">25 personen</option>
+    <option value="30">30 personen</option>
+    <option value="35">35 personen</option>
+    <option value="40">40 personen</option>
+</select>   
+<select class="border-gray-300 border rounded mt-2 w-min">
+    <option selected disabled hidden>Kies een variant</option>
+    <option value="0">Foto Chocolade (+€ 10,00 /Stuk)</option>
+    <option value="1">Foto Suiker (+€ 8,50 /Stuk)</option>
+</select>
+<select class="border-gray-300 border rounded mt-2 w-min">
+    <option selected disabled hidden>Kies een vulling</option>
+    <option value="0">Enkel Slagroom</option>
+    <option value="1">Slagroom Woudvruchten</option>
+    <option value="2">Slagroom Framboos</option>
+    <option value="3">Chocomousse</option>
+</select>
+<fieldset class="mt-3">
+    <legend class="text-sm text-gray-600">Decoratieve tekst</legend>
+
+    <div>
+      <input type="radio" id="geen" name="drone" value="geen" checked>
+      <label class="ml-1" for="geen">Geen tekst </label>
+    </div>
+
+    <div>
+      <input type="radio" id="happy" name="drone" value="happy">
+      <label class="ml-1" for="happy">Happy Birthday (+€ 1,00 /Stuk)</label>
+    </div>
+
+    <div>
+      <input type="radio" id="gelukkige" name="drone" value="gelukkige">
+      <label class="ml-1" for="gelukkige">Gelukkige Verjaardag (+€ 1,00 /Stuk)</label>
+    </div>
+
+    <div>
+        <input type="radio" id="hiep" name="drone" value="hiep">
+        <label class="ml-1" for="hiep">Hiep Hiep Hoera (+€ 1,00 /Stuk)</label>
+    </div>
+
+    <div>
+        <input type="radio" id="vermelding" name="drone" value="vermelding">
+        <label class="ml-1" for="vermelding">Vermelding (+€ 1,00 /Stuk)</label>
+    </div>
+</fieldset>
+<fieldset class="mt-3">
+  <legend class="text-sm text-gray-600">Extras</legend>
+
+  <div>
+    <input type="checkbox" id="fruit" name="fruit">
+    <label class="ml-1" for="fruit">Extra vers fruit (+€ 0,30 /pp)</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="choco" name="choco">
+    <label class="ml-1" for="choco">Extra chocolade (+€ 0,20 /pp)</label>
+  </div>
+</fieldset>
+<div class="flex content-center mt-5">
+  <p class="text-sm mr-1 text-gray-600 self-center">Aantal:</p>
+  <button class="flex customIconSize self-center">
+    <mat-icon class="customIconSize self-center text-gray-700" aria-label="remove-1 icon">remove_circle_outline</mat-icon>
+  </button>
+  <input class="w-10 text-center text-lg self-center" type="number" value="1" min="1" step="1">
+  <button class="flex customIconSize self-center">
+    <mat-icon class="customIconSize self-center text-gray-700" aria-label="add-1 icon">add_circle_outline</mat-icon>
+  </button>
+  <button class="flex py-1 px-4 my-1 mx-3 bg-main-500 rounded text-white self-center">
+    <mat-icon class="customIconSizeSmall self-center mr-1" aria-label="add-1 icon">add_shopping_cart</mat-icon>
+    <p>Voeg toe</p>
+  </button>
+</div>

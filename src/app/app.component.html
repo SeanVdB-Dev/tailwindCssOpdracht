@@ -1,7 +1,25 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<app-pageheader></app-pageheader>
-<h1 class="text-3xl font-bold underline">main content comes here</h1>
-<app-pagefooter class="fixed bottom-0"></app-pagefooter>
+<html id="app">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <app-pageheader></app-pageheader>
+    <div class=" min-h-full">
+        <div class="w-full">
+            <div class="container mx-auto">
+                <div class="flex justify-start content-center navbar-row mb-2">
+                    <mat-icon class="h-6 mt-3 ml-3 pt-0.5" aria-label="back icon">arrow_back</mat-icon>
+                    <div class="font-bold h-min self-center mt-3 text-lg">Terug naar overzicht</div>
+                </div>
+                <div class="flex justify-center flex-wrap">
+                    <div class="min-w-[20rem] w-1/2 flex flex-col">
+                        <img class="header-logo h-96 object-scale-down" src="../../../assets/taart.jfif"/>
+                    </div>
+                    <app-price-and-options class="min-w-[20rem] w-1/2 flex flex-col"></app-price-and-options>
+                </div>
+                <app-description-and-ingredients class="flex justify-start description"/>
+            </div>
+        </div>
+    </div>
+<app-pagefooter class="w-full "></app-pagefooter><!--sm:fixed sm:bottom-0-->
 
 
 <router-outlet></router-outlet>
+</html>
